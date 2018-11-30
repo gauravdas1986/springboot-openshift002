@@ -10,6 +10,6 @@ public class AppController {
 
 	@GetMapping("/service")
 	public String getMethod(){
-		return "This is the second app service";
+		return "This is the second app service ";
 	}
 }
