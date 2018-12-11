@@ -17,7 +17,7 @@ public class RestApplication {
 	}
 
 	@Bean
-	public ServletRegistrationBean servletRegistrationBean() {
+	public ServletRegistrationBean camelServletRegistrationBean() {
 		ServletRegistrationBean registration = new ServletRegistrationBean(new CamelHttpTransportServlet(),
 				CAMEL_URL_MAPPING);
 		registration.setName(CAMEL_SERVLET_NAME);
