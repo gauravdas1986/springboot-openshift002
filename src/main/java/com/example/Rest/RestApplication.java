@@ -16,12 +16,12 @@ public class RestApplication {
 		SpringApplication.run(RestApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public ServletRegistrationBean servletRegistrationBean() {
 		ServletRegistrationBean registration = new ServletRegistrationBean(new CamelHttpTransportServlet(),
 				CAMEL_URL_MAPPING);
 		registration.setName(CAMEL_SERVLET_NAME);
 
 		return registration;
-	}
+	}*/
 }
