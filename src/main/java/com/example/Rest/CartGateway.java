@@ -58,7 +58,7 @@ public class CartGateway extends RouteBuilder {
                 .unmarshal().json(JsonLibrary.Jackson, String.class)
         .endRest()
 
-        .delete("/{cartId}/{itemId}/{quantity}").description("Delete items from current user's shopping cart")
+        /*.delete("/{cartId}/{itemId}/{quantity}").description("Delete items from current user's shopping cart")
             .param().name("cartId").type(RestParamType.path).description("The ID of the cart to process").dataType("string").endParam()
             .param().name("itemId").type(RestParamType.path).description("The ID of the item to delete").dataType("string").endParam()
             .param().name("quantity").type(RestParamType.path).description("The number of items to delete").dataType("integer").endParam()
@@ -88,6 +88,6 @@ public class CartGateway extends RouteBuilder {
                 .to("http4://DUMMY")
                 .setHeader("CamelJacksonUnmarshalType", simple(String.class.getName()))
                 .unmarshal().json(JsonLibrary.Jackson, String.class)
-        .endRest();
+        .endRest()*/;
     }
 }
